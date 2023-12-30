@@ -32,7 +32,7 @@ function App() {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, Password.length)
     window.navigator.clipboard.writeText(Password)
-    // window.alert("Password copied!")
+    window.alert("Password copied!")
   }, [Password])
 
   useEffect(() => {
